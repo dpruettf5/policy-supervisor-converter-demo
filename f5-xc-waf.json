@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "name": "dev-test-demo",
+    "labels": {},
+    "annotations": {},
+    "disable": false
+  },
+  "spec": {
+    "monitoring": {},
+    "detection_settings": {
+      "signature_selection_setting": {
+        "default_attack_type_settings": {},
+        "high_medium_accuracy_signatures": {}
+      },
+      "enable_suppression": {},
+      "enable_threat_campaigns": {},
+      "violation_settings": {
+        "disabled_violation_types": [
+          "VIOL_EVASION_APACHE_WHITESPACE",
+          "VIOL_EVASION_BARE_BYTE_DECODING",
+          "VIOL_EVASION_IIS_UNICODE_CODEPOINTS",
+          "VIOL_EVASION_IIS_BACKSLASHES",
+          "VIOL_EVASION_PERCENT_U_DECODING",
+          "VIOL_EVASION_MULTIPLE_DECODING",
+          "VIOL_EVASION_DIRECTORY_TRAVERSALS",
+          "VIOL_HTTP_PROTOCOL_CONTENT_LENGTH_SHOULD_BE_A_POSITIVE_NUMBER",
+          "VIOL_HTTP_PROTOCOL_CRLF_CHARACTERS_BEFORE_REQUEST_START",
+          "VIOL_HTTP_PROTOCOL_BAD_MULTIPART_PARAMETERS_PARSING"
+        ]
+      }
+    },
+    "default_bot_setting": {},
+    "allowed_response_codes": {
+      "response_code": [
+        400,
+        401,
+        404,
+        407,
+        417,
+        503
+      ]
+    },
+    "default_anonymization": {},
+    "use_default_blocking_page": {}
+  }
+}
